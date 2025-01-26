@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  @apply tracking-tight scroll-smooth;
+}
+
+@layer base {
+
+  :root  {
+    --background: 189 0% 100%;
+    --foreground: 189 0% 10%;
+    --card: 189 0% 100%;
+    --card-foreground: 189 0% 15%;
+    --popover: 189 0% 100%;
+    --popover-foreground: 189 95% 10%;
+    --primary: 189 52.1% 52.5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 171, 46%, 52%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 151 10% 95%;
+    --muted-foreground: 189 0% 40%;
+    --accent: 151 10% 90%;
+    --accent-foreground: 189 0% 15%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 189 0% 100%;
+    --border: 189 20% 82%;
+    --input: 189 20% 50%;
+    --ring: 189 52.1% 52.5%;
+    --radius: 0.5rem;
+  }
+  .dark  {
+    --background: 189 10% 10%;
+    --foreground: 189 0% 100%;
+    --card: 189 0% 10%;
+    --card-foreground: 189 0% 100%;
+    --popover: 189 10% 5%;
+    --popover-foreground: 189 0% 100%;
+    --primary: 189 52.1% 52.5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 189 10% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 151 10% 25%;
+    --muted-foreground: 189 0% 65%;
+    --accent: 151 10% 25%;
+    --accent-foreground: 189 0% 95%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 189 0% 100%;
+    --border: 189 20% 50%;
+    --input: 189 20% 50%;
+    --ring: 189 52.1% 52.5%;
+    --radius: 0.5rem;
+  }
+  
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
